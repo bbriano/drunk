@@ -1,17 +1,6 @@
-CC ?= gcc
-DESTDIR ?= /usr/local/bin
+argv:
+	$(CC) -o drunkcase drunkcase.c
 
-
-all: drunkcase
-
-drunkcase: drunkcase.c
-	$(CC) $(CFLAGS) -o $@ $^
-
-
-.PHONY: install clean
-
-install: drunkcase
-	install drunkcase $(DESTDIR)
-
+.PHONY: clean
 clean:
-	rm -f drunkcase
+	$(RM) drunkcase
