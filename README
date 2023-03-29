@@ -1,15 +1,9 @@
-Drunkcase randomly change character case.
+Drunk randomize character case.
 
-Use:
-    $ ls * | drunkcase
-    lICeNse
-    maKeFIle
-    reaDME
-    drUNKCASE.c
+Install
+	$ make
+	$ mv drunkcase /your/favourite/path/bin
 
-Install (cmake):
-    $ make
-    $ mv drunkcase /your/favourite/path/bin
-
-Install (macOS):
-    $ brew install bbriano/bbriano/drunkcase
+Use
+	$ echo * | drunk
+	LiceNse MAkEfIle REAdME DrUNK.c

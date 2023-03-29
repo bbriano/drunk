@@ -1,6 +1,7 @@
-argv:
-	$(CC) -o drunkcase drunkcase.c
+drunk:
+	$(CC) -o drunk drunk.c
 
 .PHONY: clean
+
 clean:
-	$(RM) drunkcase
+	$(RM) drunk
